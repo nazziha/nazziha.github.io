@@ -1,0 +1,266 @@
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+#home {
+    font-size: xx-large;
+}
+
+ul {
+    font-size: 25px;
+    list-style-type: none;
+    display: flex;
+}
+
+ul li{
+    float:right;
+    padding-top: 15px;
+    padding-left: 12pt;
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul li a:hover{
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.bg-image.banner{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/img/bannerjiha.jpg');
+    position: relative;
+    height: 38vw; 
+    width:100vw;
+    max-width: 100vw;
+    margin: 0 calc(-50vw + 50%);
+}
+
+.space{
+    padding-top: 100px;
+}
+
+.intro{
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    width:100vw;
+    max-width: 100vw;
+    margin: 0 calc(-50vw + 50%);
+}
+
+h3{
+    padding-bottom: 20px;
+}
+
+.intro #text-1{
+    text-align: center;
+    margin: auto;
+    font-size: larger;
+}
+
+.intro div{
+    float:left;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    margin:auto;
+}
+
+img{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/img/testimage.jpg');
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    float: right;
+    justify-content: center;
+}
+
+.navbar #navlist a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar #navlist a:hover{
+    text-decoration:none;
+    background-color: black;
+    color:white;
+}
+
+.carousel {
+    justify-items: center;
+    max-width: 80%;
+    height:auto;
+    margin:auto;
+}
+
+.gallery h3{
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: xx-large;
+}
+
+.musicpart h3{
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: xx-large;
+}
+
+.musicpart #musictext{
+    display: flex;
+    justify-content: center;
+}
+
+.musicpart #musictext #musiclist li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.musicpart #musictext #musiclist li a:hover{
+    background-color: black;
+    color: white;
+}
+
+.intro1{
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgba(4, 2, 22, 0.671);
+    display: flex;
+    justify-content: space-between;
+    width:100vw;
+    height: 55vw;
+    overflow: auto;
+    max-width: 100vw;
+    margin: 0 calc(-50vw + 50%);
+}
+
+.contact h3 {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: xx-large;
+}
+
+.contact form{
+    font-size: large;
+}
+
+.submitbtn{
+    padding-top: 20px;
+    font-size: medium;
+}
+
+.foot{
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    width:100vw;
+    max-width: 100vw;
+    max-height: 112vw;
+    margin: calc(-50vw + 50%);
+    height: 25px;
+}
+
+.foot p{
+    align-items: center;
+    margin: auto;
+    font-size: x-small;
+}
+
+#nbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+#brnd{
+    color: black;
+}
+
+.navbar a:hover{
+    text-decoration: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.fa-bars{
+    color: black;
+}
+
+@media (max-width: 952px){
+    .nbar .navbar ul li a{
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;  
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.876);
+        left: -300%;
+        top: 102px;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nbar .navbar ul li{
+        display: block;
+    }
+    .nbar .navbar ul li a{
+        font-size: 20px;
+    }
+    .intro #text-1{
+        text-align: center;
+        margin: auto;
+        font-size: small;
+    }
+    a:hover,a.active{
+        color: black;
+    }
+    #check:checked ~ ul{
+        left:0%;
+    }
+}

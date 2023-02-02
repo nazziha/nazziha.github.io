@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Naziha</title>
+</head>
+<body class="p-3 mb-2 bg-light text-dark">
+    <section class="space" id="top"></section>
+    <div id="nbar">
+        <div>
+        <nav class="navbar">     
+            <label class="display-4 nbr"><a id="brnd" href="#">Naziha</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul id="navlist"> 
+                <li><a href="#top">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#musicsection">Music</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <div class="bg-image banner">
+    </div>
+    <div class="intro1">
+        <div class="p-4 intro container-fluid">
+            <div id="text-1">
+                <h3>Hi Everyone</h3>
+                <p>My name is Sidqi Naziha
+                    I'm a part times singer as well
+                    as a web developer
+                    also I have a lovely pet
+                </p>
+            </div>
+            <div><img alt="Profile" class="border align-middle" src="/img/profilenaziha.jpg"></div>
+        </div>
+    </div>
+    <section class="space" id="gallery"></section>
+    <div class="gallery"><h3>Gallery</h3></div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/img/landscape.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/img/concert.jpg" alt="Second slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <section class="space" id="musicsection"></section>
+
+    <div class="musicpart">
+        <div>
+            <h3>Music</h3>
+        </div>
+        <div id="musictext">
+            <ol id="musiclist">
+                <li><a href="https://open.spotify.com/artist/62e9IPqY0iiDGAIytr6At5?si=-3KcYCiNTBuTG7bOn7rbVA" target="_blank">Spotify</a></li>
+                <!-- <li><a href="#">YouTube</a></li> -->
+                <li><a href="https://www.instagram.com/nazziha_/" target="_blank">Instagram</a></li>
+            </ol>
+        </div>
+    </div>
+    <section class="space"></section>
+    <section class="space"></section>
+
+    <div class="container mt-5 contact">
+        <h3>Contact Me</h3>
+        <form class="row g-3" action="https://formsubmit.co/nazziha29@gmail.com" method="POST">
+
+            <div class="col-md-6">
+                <label for="nameform" class="form-label">Name</label>
+                <input type="text" name="Name" class="form-control" id="nameform">
+            </div>
+            <div class="col-md-6">
+                <label for="emailform" class="form-label">Email</label>
+                <input type="email" name="Email" class="form-control" id="emailform" required>
+            </div>
+            <div class="col-md-12">
+                <label for="massage" class="form-label">Massage</label>
+                <textarea class="form-control" name="Comment" id="massage" rows="4" required></textarea>
+            </div>
+            <div class="col-md-12 submitbtn">
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <section class="space"></section>
+    <section class="space"></section>
+
+    <div class="foot">
+        <p>Miura©2023</p>
+    </div>
+
+</body></html>
